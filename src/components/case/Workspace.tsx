@@ -186,11 +186,9 @@ export function Workspace({ onExit }: { onExit: () => void }) {
       </div>
 
       <form onSubmit={handleChamberSubmit} className="glass-panel space-y-3 rounded-lg p-4 sm:p-5">
-        <label htmlFor="chamber-answer" className="label-micro block">
-          Conclusion · chamber {active}
-        </label>
+        <span className="label-micro block">Conclusion · chamber {active}</span>
         <input
-          id="chamber-answer"
+          aria-label={`Conclusion for chamber ${active}`}
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
           placeholder={chamber.placeholder}
