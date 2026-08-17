@@ -276,7 +276,7 @@ export function Workspace({ onExit }: { onExit: () => void }) {
 
   return (
     <div className="scanlines relative min-h-[100dvh] w-full overflow-x-hidden bg-background">
-      <div aria-hidden className="pointer-events-none fixed inset-0">
+      <div aria-hidden className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute inset-x-0 bottom-0 h-[45%] opacity-40">
           <div className="perspective-grid h-full w-full" />
         </div>
