@@ -26,7 +26,7 @@ export function CinematicIntro({
     <div className="scanlines relative flex min-h-[100dvh] w-full flex-col overflow-hidden bg-background">
       {/* environment */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-x-0 bottom-0 h-[62%] opacity-70">
+        <div className="absolute inset-x-0 bottom-0 h-[62%] overflow-hidden opacity-70">
           <div className="perspective-grid h-full w-full" />
         </div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_38%,transparent_0%,var(--background)_78%)]" />
