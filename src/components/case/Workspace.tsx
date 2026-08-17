@@ -1,4 +1,3 @@
-<<<<<<< PATCH
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { CHAMBERS, PROOF_EXAMPLE, PROOF_TEMPLATE, type ChamberId } from "@/lib/case-data";
