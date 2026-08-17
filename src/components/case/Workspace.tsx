@@ -56,10 +56,12 @@ export function Workspace({ onExit }: { onExit: () => void }) {
     }
   }, [progress, hydrated]);
 
+  const answersRef = useRef<Record<string, string>>({});
+  answersRef.current = progress.answers;
   useEffect(() => {
-    setAnswer(progress.answers[`c${active}`] ?? "");
+    setAnswer(answersRef.current[`c${active}`] ?? "");
     setFeedback(null);
-  }, [active, progress.answers]);
+  }, [active]);
 
   const solvedCount = progress.solved.length;
   const allSolved = solvedCount === 6;
